@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="../js/notifications.css">
+		<script src="../js/notifications.js"></script>
+</head>
+<body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/push-js@1.1.1/dist/Push.min.js"></script>
+
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+    myNotification()
+    window.alert("Hello")
+});
+
+	function myNotification(){
+		const myNotification = window.createNotification({
+      // close on click
+  closeOnClick: true,
+  // displays close button
+  displayCloseButton: false,
+  // nfc-top-left
+  // nfc-bottom-right
+  // nfc-bottom-left
+  positionClass: 'nfc-top-right',
+  // callback
+  onclick: false,
+  // timeout in milliseconds
+  showDuration: 3500,
+  // success, info, warning, error, and none
+  theme: 'success'
+});	
+	}
+	
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtistAndYou</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="../jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/useradd.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h2>User Inteface</h2>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form id="userForm">
+                    <div class="ui-field-contain">
+                        
+                        <input type="submit" name="AddWaste" onclick="addWaste()" value="Add Waste">
+                        <label></label>
+
+                        <input id="clickMe" type="button" value="View Waste" onclick="viewWaste();" />
+
+                        <input id="click" type="button" value="View Time Schedule" onclick="viewTime();" />
+                      
+                        <label></label>
+                        <!-- <input type="submit" name="ViewInfo" onclick="Logout()" value="View Waste"> <br> -->
+
+                     <input id="clickMe" type="button" value="Logout" onclick="doFunction();" />
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
